@@ -1,0 +1,19 @@
+div {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+div input {
+  text-align: center;
+  font-size: xx-large;
+  border: 0;
+  pointer-events: none;
+}
+
+.game-score {
+display: grid;
+}
+
+.score {
+  font-size: xx-large;
+}
