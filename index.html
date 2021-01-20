@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload="onPageLoad()">
 
 <button onclick="splitFunction()">Split String</button>
 
@@ -29,6 +29,7 @@
     alert(search);
 
   function splitFunction() {
+    var url = document.location.href;
     var str = "Gamer_tag=Sara";
     var result = str.split("="); // Splits string based on =
     alert(result[0]);
