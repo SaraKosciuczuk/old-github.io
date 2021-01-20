@@ -1,6 +1,24 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="splitFunction()">Split String</button>
+
+<p id="demo"></p>
 
 <form method="get" action="/example.html">
   <input type="text" id="fname" name="fname" value="username">
   <input type="submit" value="Submit">
 </form>
+
+<script>
+function splitFunction() {
+  var str = "?gamer_tag=Phil";
+  var result = str.split("="); // Splits string based on =
+  alert(result[0]);
+  alert(result[1]);
+}
+</script>
+
+</body>
+</html> 
