@@ -204,9 +204,6 @@ function setTimer() {
 	}, 1000)
 }
 
-// show gamertag
-changeGamertag();
-
 // calculate positions
 calculateFirstPositions()
 
@@ -215,3 +212,6 @@ addEventListeners()
 
 // execute main program every 1 ms
 setInterval(main, 16)
+
+// show gamertag
+changeGamertag();
