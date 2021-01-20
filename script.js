@@ -12,6 +12,11 @@ let clock
 let lastUpdate = Date.now()
 let totalSeconds = 0
 
+// show gamertag
+function changeGamertag() {
+	document.getElementById("showGamertag").innerHTML="hello "+gamertag;
+}
+
 // background image
 const backgroundImg = { image: new Image(), ready: false, speed: 100 }
 backgroundImg.image.onload = () => backgroundImg.ready = true
@@ -198,6 +203,9 @@ function setTimer() {
 		interval--
 	}, 1000)
 }
+
+// show gamertag
+changeGamertag();
 
 // calculate positions
 calculateFirstPositions()
