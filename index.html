@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html>
-<body onload="onPageLoad()">
-
-<button onclick="splitFunction()">Split String</button>
-
-<p id="demo"></p>
+<body>
 
 <form method="get" action="/example.html">
   <input type="text" id="fname" name="fname" value="username">
   <input type="submit" value="Submit">
 </form>
-
-<script>
-  function onPageLoad() {
-  var href = window.location.href;
-    alert(href);
-   
-    var protocol = window.location.protocol;
-    alert(protocol);
-   
-    var host = window.location.host;
-    alert(host);
-   
-    var pathname = window.location.pathname;
-    alert(pathname);
-   
-    var search = window.location.search;
-    alert(search);
-
-  function splitFunction() {
-    var url = document.location.href;
-    var str = "Gamer_tag=Sara";
-    var result = str.split("="); // Splits string based on =
-    alert(result[0]);
-    alert(result[1]);
-}
-</script>
 
 </body>
 </html> 
