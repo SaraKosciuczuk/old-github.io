@@ -79,6 +79,16 @@ function updateScoreAndTime(interval, score, bestScore) {
 	timerElem.setAttribute("value", '00 : ' + interval)
 	bestScoreElem.setAttribute("value", 'Best score: ' + bestScore)
 	scoreElem.setAttribute("value", score)
+
+
+	//if (isNaN(current_score)) {
+		//localStorage.setItem('score', 0);
+		//document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
+	 // } else {
+		localStorage.setItem('bestScore', parseInt(score));
+	//	document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
+	 // }
+
 }
 
 // calculate the elements positions in canvas
