@@ -79,9 +79,6 @@ function updateScoreAndTime(interval, score, bestScore) {
 	timerElem.setAttribute("value", '00 : ' + interval)
 	bestScoreElem.setAttribute("value", 'Best score: ' + bestScore)
 	scoreElem.setAttribute("value", score)
-
-	localStorage.setItem('score', 'bestScore', parseInt(current_score) + 1);
-	document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
 }
 
 // calculate the elements positions in canvas
@@ -206,6 +203,9 @@ function setTimer() {
 		interval--
 	}, 1000)
 }
+
+localStorage.setItem('score', 'bestScore', parseInt(current_score) + 1);
+	document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
 
 // calculate positions
 calculateFirstPositions()
