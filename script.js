@@ -204,9 +204,6 @@ function setTimer() {
 	}, 1000)
 }
 
-localStorage.setItem('score', 'bestScore', parseInt(current_score) + 1);
-	document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
-
 // calculate positions
 calculateFirstPositions()
 
