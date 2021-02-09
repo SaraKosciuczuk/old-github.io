@@ -88,8 +88,18 @@ function updateScoreAndTime(interval, score, bestScore) {
 		localStorage.setItem('bestScore', parseInt(score));
 	//	document.getElementById("SCORE").innerHTML = " [ " + current_score + " ] ";
 	 // }
-
 }
+
+//readJSONFromURL('./data/level.json', function (err, data) {
+    //if (err != null) {
+    //  console.error(err);
+    //} 
+	//else {
+      //var text = data["Boss"];
+      //console.log(text);
+    //}
+  //});
+
 
 // calculate the elements positions in canvas
 function calculateFirstPositions() {
