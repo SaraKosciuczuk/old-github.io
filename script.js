@@ -92,7 +92,7 @@ function updateScoreAndTime(interval, score, bestScore) {
 
 //readJSONFromURL('./data/level.json', function (err, data) {
     //if (err != null) {
-    //  console.error(err);
+    // console.error(err);
     //} 
 	//else {
       //var text = data["Boss"];
